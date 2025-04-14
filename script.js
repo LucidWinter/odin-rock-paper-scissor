@@ -24,11 +24,11 @@ function playRound(humanChoice, computerChoice){
               humanChoice === 'paper' && computerChoice === 'rock' ||
               humanChoice === 'scissors' && computerChoice === 'paper'){
                 humanScore++;
-                return `You won! ${humanChoice} beats ${computerChoice}`
-        } else{
-            computerScore++;
-            return `You lost! ${computerChoice} beats ${humanChoice}`
-        }
+                return `You won! ${humanChoice} beats ${computerChoice}`;
+    } else{
+        computerScore++;
+        return `You lost! ${computerChoice} beats ${humanChoice}`;
+    }
 }
 
 function playGame(){
@@ -39,7 +39,7 @@ function playGame(){
         console.log(playRound(humanSelection, computerSelection));
     }
 
-    console.log(`Human Score:${humanScore} \nComputer Score:${computerScore}`)
+    console.log(`Human Score:${humanScore} \nComputer Score:${computerScore}`);
 }
 
 playGame();
